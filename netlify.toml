@@ -1,0 +1,27 @@
+[[redirects]]
+  from = "/blog"
+  to = "https://ecomreco.feather.blog/blog"
+  status = 200
+  force = true
+  headers = {X-Forwarded-Host = "ecomreco.com"}
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://ecomreco.feather.blog/blog/:splat"
+  status = 200
+  force = true
+  headers = {X-Forwarded-Host = "ecomreco.com"}
+
+[[redirects]]
+  from = "/_feather"
+  to = "https://ecomreco.feather.blog/_feather"
+  status = 200
+  force = true
+  headers = {X-Forwarded-Host = "ecomreco.com"}
+
+[[redirects]]
+  from = "/_feather/*"
+  to = "https://ecomreco.feather.blog/_feather/:splat"
+  status = 200
+  force = true
+  headers = {X-Forwarded-Host = "ecomreco.com"}
